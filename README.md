@@ -1,22 +1,34 @@
-# Oriz Cipher — Cryptography Tools
+# Oriz Cipher — Crypto tools
 
-Encryption, decryption, hashing, and key-generation utilities for everyday cryptography work. Everything runs client-side in your browser via the WebCrypto API — no payloads ever hit a server.
+> Encryption, decryption, hashing, and key-generation utilities for everyday cryptography work.
 
-**Live:** https://crypto.oriz.in
+**Live at**: <https://crypto.oriz.in> · **Status**: scaffold
 
-## Brand
+## What this is
 
-**Cipher** is the encryption product in the Oriz family. The name signals what the app does: turn plaintext into ciphertext (and back), generate keys, derive hashes, sign and verify.
+Cipher turns plaintext into ciphertext (and back), generates keys, derives hashes, and signs and verifies messages. Everything runs client-side in your browser via the native WebCrypto API — no payloads ever hit a server.
 
-## Stack
+## Per-feature inventory
 
-- **Astro 6** — static-first site framework, islands architecture
-- **React 19** — interactive islands for the tool UIs
-- **Tailwind v4** — utility-first styling
-- **WebCrypto API** — native browser cryptography (no third-party crypto libs in the hot path)
+| Feature                     | Status     |
+| --------------------------- | ---------- |
+| (tools not yet implemented) | 📜 planned |
 
-All crypto operations are performed locally in the user's browser. Nothing is uploaded.
+## App-specific env vars
+
+None beyond the family-wide set at `templates/.env.example`.
+
+## Local dev
+
+```bash
+# from the workspace root (c:/D/oriz)
+pnpm -F oriz-cipher-crypto-tools-app dev
+```
+
+## Knowledge
+
+See [`./knowledge/`](./knowledge/) for app-specific decisions, runbooks, and services. Family rules / decisions / architecture live at the master repo's [`knowledge/`](../../../../knowledge/).
 
 ## License
 
-Source-available, all rights reserved. See [LICENSE](./LICENSE).
+Source-available, all rights reserved. See master [`LICENSE`](../../../../LICENSE) — same terms across the family.
